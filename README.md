@@ -74,4 +74,6 @@ looked at GitHub sourcecode: https://github.com/bezkoder/angular-17-pagination-e
 added page, count, pageSize, pagesSizes,
 https://github.com/bezkoder/angular-17-pagination-example/blob/master/src/app/components/tutorial-details/tutorial-details.component.html, and ts: still error with routerLink,
 app.module.ts:
-import AppRoutingModule, removed RouterOutlet
+import AppRoutingModule, removed RouterOutlet,
+angular.json:
+added scripts paths
