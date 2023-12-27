@@ -61,10 +61,17 @@ tutorial-list.component.ts (de-bug import paths),
 tutorials-list.component.html,
 tutorial-details.component.ts (incomplete): import OnInit, Input, and Tutorial,
 tutorial-list.component.css for list class,
-add pagination to tutorial-list component by seeing linked example: ngx-pagination,
+add pagination to tutorial-list component by seeing linked example: ngx-pagination 6,
 tutorial-details.component.ts (complete now): debug import paths,
 tutorial-details.component.html,
 tutorial-details.component.css for edit-form class,
-not compiling (problem routerlink) no pagination yet
-
-
+not compiling (problem routerlink) no pagination yet,
+npm i ngx-pagination,
+app.module.ts: import NgxPaginationModule from 'ngx-pagination',
+tutorials-list.component.html: update HTML,
+tutorial-list.component.ts: add getRequestParams, update retrieveTutorials, added handlePageChange and handlePageSizeChange,
+looked at GitHub sourcecode: https://github.com/bezkoder/angular-17-pagination-example/blob/master/src/app/components/tutorials-list/tutorials-list.component.ts, 
+added page, count, pageSize, pagesSizes,
+https://github.com/bezkoder/angular-17-pagination-example/blob/master/src/app/components/tutorial-details/tutorial-details.component.html, and ts: still error with routerLink,
+app.module.ts:
+import AppRoutingModule, removed RouterOutlet
